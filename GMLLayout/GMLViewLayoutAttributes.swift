@@ -8,6 +8,6 @@
 
 import UIKit
 
-extension UIView {
+protocol GMLViewLayoutAttributes {
     
 }

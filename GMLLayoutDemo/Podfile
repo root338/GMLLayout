@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source ‘https://github.com/CocoaPods/Specs.git’
+
+use_frameworks!
+
+target 'GMLLayoutDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  
+  pod 'GMLFoundationExtension', git: 'https://github.com/root338/GMLFoundationExtension.git'
+
+  
+#   Pods for GMLLayoutDemo
+  
+# Private
+#  pod 'GMLFoundationExtension', :podspec => '~/dev/GMLFoundationExtension/GMLFoundationExtension.podspec'
+#  pod 'GMLFoundationExtension', :path => '~/dev/GMLFoundationExtension'
+  
+
+  target 'GMLLayoutDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GMLLayoutDemoUITests' do
+    # Pods for testing
+  end
+
+end

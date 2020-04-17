@@ -1,0 +1,26 @@
+//
+//  GMLLayoutAttributesDefines.swift
+//  GMLLayoutDemo
+//
+//  Created by apple on 2020/4/13.
+//  Copyright © 2020 GML. All rights reserved.
+//
+
+import Foundation
+
+enum GMLLayoutAttribute {
+    case left
+    case right
+    case top
+    case bottom
+    case width
+    case heigth
+    case centerX
+    case centerY
+}
+
+enum GMLLayoutRelation : Int {
+    case lessThanOrEqual = -1
+    case equal = 0
+    case greaterThanOrEqual = 1
+}

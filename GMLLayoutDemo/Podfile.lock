@@ -1,0 +1,21 @@
+PODS:
+  - GMLFoundationExtension (0.0.2)
+
+DEPENDENCIES:
+  - GMLFoundationExtension (from `https://github.com/root338/GMLFoundationExtension.git`)
+
+EXTERNAL SOURCES:
+  GMLFoundationExtension:
+    :git: https://github.com/root338/GMLFoundationExtension.git
+
+CHECKOUT OPTIONS:
+  GMLFoundationExtension:
+    :commit: d5e2c778cab8c30e66c4ebcf6966657e5fe56585
+    :git: https://github.com/root338/GMLFoundationExtension.git
+
+SPEC CHECKSUMS:
+  GMLFoundationExtension: e223a8138c75e91dfbb37cb702620b639d96331b
+
+PODFILE CHECKSUM: 326dce4ca5c9a5acdfb0acdcff93c64ed0fd68ef
+
+COCOAPODS: 1.8.4
