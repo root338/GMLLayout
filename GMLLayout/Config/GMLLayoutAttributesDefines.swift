@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum GMLLayoutAttribute {
+public enum GMLLayoutAttribute {
     case left
     case right
     case top
@@ -19,7 +19,7 @@ enum GMLLayoutAttribute {
     case centerY
 }
 
-enum GMLLayoutRelation : Int {
+public enum GMLLayoutRelation : Int {
     case lessThanOrEqual = -1
     case equal = 0
     case greaterThanOrEqual = 1

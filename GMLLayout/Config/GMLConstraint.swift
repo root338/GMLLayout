@@ -9,39 +9,15 @@
 import UIKit
 
 protocol GMLConstraintDelegate : NSObjectProtocol {
-    func constraint(_ constraint: GMLConstraint, shouldBeReplaced replacedConstraint: GMLConstraint)
-    func constraint(_ constraint: GMLConstraint, addConstraint layoutAttribute: GMLLayoutAttribute) -> GMLConstraint
+    func constraint(_ constraint: GMLConstraintPrivate, shouldBeReplaced replacedConstraint: GMLConstraintPrivate)
+    func constraint(_ constraint: GMLConstraintPrivate, addConstraint layoutAttribute: GMLLayoutAttribute) -> GMLConstraintPrivate
 }
 
-protocol GMLConstraint : NSObjectProtocol {
+protocol GMLConstraintPrivate : GMLConstraint {
     var delegate : GMLConstraintDelegate { get set }
-    var left : GMLConstraint { get }
-    var right : GMLConstraint { get }
-    var top : GMLConstraint { get }
-    var bottom : GMLConstraint { get }
-    var width : GMLConstraint { get }
-    var height : GMLConstraint { get }
-    var centerX : GMLConstraint { get }
-    var centerY : GMLConstraint { get }
-    
-//    init(delegate: GMLConstraintDelegate)
-    
-    func insets(_ insets: UIEdgeInsets) -> GMLConstraint
-    func inset(_ inset: CGFloat) -> GMLConstraint
-    func size(_ size: CGSize) -> GMLConstraint
-    func offset(_ offset: CGFloat) -> GMLConstraint
 }
 
-//class GMLConstraint: NSObject {
-//    unowned private var delegate : GMLConstraintDelegate
-//
-//    init(delegate: GMLConstraintDelegate) {
-//        self.delegate = delegate
-//        super.init()
-//    }
-//}
-
-extension GMLConstraint {
+extension GMLConstraintPrivate {
     var left : GMLConstraint {
         return delegate.constraint(self, addConstraint: .left)
     }

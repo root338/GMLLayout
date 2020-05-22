@@ -9,7 +9,8 @@
 import UIKit
 import GMLFoundationExtension
 
-class GMLCompositeConstraint: NSObject, GMLConstraint {
+class GMLCompositeConstraint: NSObject, GMLConstraintPrivate {
+    
     unowned var delegate: GMLConstraintDelegate
     
     private var constraints : [GMLConstraint]
@@ -23,12 +24,12 @@ class GMLCompositeConstraint: NSObject, GMLConstraint {
 extension GMLCompositeConstraint : GMLConstraintDelegate {
     
     //MARK:- GMLConstraintDelegate
-    func constraint(_ constraint: GMLConstraint, shouldBeReplaced replacedConstraint: GMLConstraint) {
+    func constraint(_ constraint: GMLConstraintPrivate, shouldBeReplaced replacedConstraint: GMLConstraintPrivate) {
         
         _ = try? constraints.ml_replace(constraint, replaceObj: replacedConstraint)
     }
     
-    func constraint(_ constraint: GMLConstraint, addConstraint layoutAttribute: GMLLayoutAttribute) -> GMLConstraint {
+    func constraint(_ constraint: GMLConstraintPrivate, addConstraint layoutAttribute: GMLLayoutAttribute) -> GMLConstraintPrivate {
         let newConstraint = delegate.constraint(self, addConstraint: layoutAttribute)
         newConstraint.delegate = self
         constraints.append(newConstraint)
@@ -53,6 +54,13 @@ extension GMLCompositeConstraint : GMLConstraintDelegate {
     func offset(_ offset: CGFloat) -> GMLConstraint {
         for constraint in constraints {
             _ = constraint.offset(offset)
+        }
+        return self
+    }
+    
+    func equal(_ viewAttribute: GMLViewAttribute) -> GMLConstraint {
+        for constraint in constraints {
+            _ = constraint.equal(viewAttribute)
         }
         return self
     }

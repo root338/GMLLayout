@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1814AE0B2444014B003FDE51 /* GMLLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE0A2444014B003FDE51 /* GMLLayoutProtocol.swift */; };
+		180CD493244D743F001F574B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD492244D743F001F574B /* ViewExtension.swift */; };
+		180CD495244D77BB001F574B /* GMLConstraint+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD494244D77BB001F574B /* GMLConstraint+Public.swift */; };
+		180CD49A244D86AE001F574B /* GMLSetLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD499244D86AE001F574B /* GMLSetLayout.swift */; };
+		1814AE0B2444014B003FDE51 /* GMLLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE0A2444014B003FDE51 /* GMLLayout.swift */; };
 		1814AE0D24441002003FDE51 /* GMLLayoutAttributesDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE0C24441002003FDE51 /* GMLLayoutAttributesDefines.swift */; };
 		1814AE0F24441441003FDE51 /* GMLLayoutMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE0E24441441003FDE51 /* GMLLayoutMarker.swift */; };
 		1814AE2E24458BFA003FDE51 /* GMLConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE2D24458BFA003FDE51 /* GMLConstraint.swift */; };
-		1814AE32244591A4003FDE51 /* GMLLayerAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE31244591A4003FDE51 /* GMLLayerAttribute.swift */; };
-		1814AE3424459278003FDE51 /* GMLLayerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE3324459278003FDE51 /* GMLLayerConstraint.swift */; };
+		1814AE32244591A4003FDE51 /* GMLViewAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE31244591A4003FDE51 /* GMLViewAttribute.swift */; };
+		1814AE3424459278003FDE51 /* GMLViewConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE3324459278003FDE51 /* GMLViewConstraint.swift */; };
 		1814AE3624459FDE003FDE51 /* GMLCompositeConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE3524459FDE003FDE51 /* GMLCompositeConstraint.swift */; };
-		1814AE582449842F003FDE51 /* GMLConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE572449842F003FDE51 /* GMLConstraintContainer.swift */; };
 		18181D82244016950006E095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18181D81244016950006E095 /* AppDelegate.swift */; };
 		18181D84244016950006E095 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18181D83244016950006E095 /* SceneDelegate.swift */; };
 		18181D86244016950006E095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18181D85244016950006E095 /* ViewController.swift */; };
@@ -23,7 +25,6 @@
 		18181D8E244016A10006E095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18181D8C244016A10006E095 /* LaunchScreen.storyboard */; };
 		18181D99244016A20006E095 /* GMLLayoutDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18181D98244016A20006E095 /* GMLLayoutDemoTests.swift */; };
 		18181DA4244016A20006E095 /* GMLLayoutDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18181DA3244016A20006E095 /* GMLLayoutDemoUITests.swift */; };
-		18181DB4244017A50006E095 /* GMLViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18181DB3244017A50006E095 /* GMLViewLayoutAttributes.swift */; };
 		1A2CE1B52001EAC48B1328DD /* Pods_GMLLayoutDemo_GMLLayoutDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E50D6AEDD7439CDE4D2D5B /* Pods_GMLLayoutDemo_GMLLayoutDemoUITests.framework */; };
 		3228C76993729D30E28A6B6A /* Pods_GMLLayoutDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCAF02C5259F9FF2F0C6454 /* Pods_GMLLayoutDemoTests.framework */; };
 		CDEFD6C0473D080B03330C70 /* Pods_GMLLayoutDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75C1845AFA7AAA67027E4D1 /* Pods_GMLLayoutDemo.framework */; };
@@ -48,14 +49,16 @@
 
 /* Begin PBXFileReference section */
 		025165067142E39AA79D7905 /* Pods-GMLLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMLLayoutDemo.release.xcconfig"; path = "Target Support Files/Pods-GMLLayoutDemo/Pods-GMLLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
-		1814AE0A2444014B003FDE51 /* GMLLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLayoutProtocol.swift; sourceTree = "<group>"; };
+		180CD492244D743F001F574B /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		180CD494244D77BB001F574B /* GMLConstraint+Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GMLConstraint+Public.swift"; sourceTree = "<group>"; };
+		180CD499244D86AE001F574B /* GMLSetLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLSetLayout.swift; sourceTree = "<group>"; };
+		1814AE0A2444014B003FDE51 /* GMLLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLayout.swift; sourceTree = "<group>"; };
 		1814AE0C24441002003FDE51 /* GMLLayoutAttributesDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLayoutAttributesDefines.swift; sourceTree = "<group>"; };
 		1814AE0E24441441003FDE51 /* GMLLayoutMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLayoutMarker.swift; sourceTree = "<group>"; };
 		1814AE2D24458BFA003FDE51 /* GMLConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLConstraint.swift; sourceTree = "<group>"; };
-		1814AE31244591A4003FDE51 /* GMLLayerAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLayerAttribute.swift; sourceTree = "<group>"; };
-		1814AE3324459278003FDE51 /* GMLLayerConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLayerConstraint.swift; sourceTree = "<group>"; };
+		1814AE31244591A4003FDE51 /* GMLViewAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLViewAttribute.swift; sourceTree = "<group>"; };
+		1814AE3324459278003FDE51 /* GMLViewConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLViewConstraint.swift; sourceTree = "<group>"; };
 		1814AE3524459FDE003FDE51 /* GMLCompositeConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLCompositeConstraint.swift; sourceTree = "<group>"; };
-		1814AE572449842F003FDE51 /* GMLConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLConstraintContainer.swift; sourceTree = "<group>"; };
 		18181D7E244016950006E095 /* GMLLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMLLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18181D81244016950006E095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18181D83244016950006E095 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		18181D9F244016A20006E095 /* GMLLayoutDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMLLayoutDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18181DA3244016A20006E095 /* GMLLayoutDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLayoutDemoUITests.swift; sourceTree = "<group>"; };
 		18181DA5244016A20006E095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18181DB3244017A50006E095 /* GMLViewLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLViewLayoutAttributes.swift; sourceTree = "<group>"; };
 		1C7B2E69A91C1C9F65AC717B /* Pods-GMLLayoutDemo-GMLLayoutDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMLLayoutDemo-GMLLayoutDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-GMLLayoutDemo-GMLLayoutDemoUITests/Pods-GMLLayoutDemo-GMLLayoutDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		233E00C39DD9B76224C19E9B /* Pods-GMLLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMLLayoutDemo.debug.xcconfig"; path = "Target Support Files/Pods-GMLLayoutDemo/Pods-GMLLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4380C2E07C821C8503BADD35 /* Pods-GMLLayoutDemo-GMLLayoutDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMLLayoutDemo-GMLLayoutDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-GMLLayoutDemo-GMLLayoutDemoUITests/Pods-GMLLayoutDemo-GMLLayoutDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180CD496244D8667001F574B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1814AE31244591A4003FDE51 /* GMLViewAttribute.swift */,
+				1814AE3324459278003FDE51 /* GMLViewConstraint.swift */,
+				1814AE3524459FDE003FDE51 /* GMLCompositeConstraint.swift */,
+				1814AE0C24441002003FDE51 /* GMLLayoutAttributesDefines.swift */,
+				1814AE0A2444014B003FDE51 /* GMLLayout.swift */,
+				1814AE0E24441441003FDE51 /* GMLLayoutMarker.swift */,
+				1814AE2D24458BFA003FDE51 /* GMLConstraint.swift */,
+				180CD494244D77BB001F574B /* GMLConstraint+Public.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		180CD498244D8682001F574B /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				180CD499244D86AE001F574B /* GMLSetLayout.swift */,
+			);
+			path = Calculate;
+			sourceTree = "<group>";
+		};
 		18181D75244016950006E095 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +163,7 @@
 				18181D81244016950006E095 /* AppDelegate.swift */,
 				18181D83244016950006E095 /* SceneDelegate.swift */,
 				18181D85244016950006E095 /* ViewController.swift */,
+				180CD492244D743F001F574B /* ViewExtension.swift */,
 				18181D87244016950006E095 /* Main.storyboard */,
 				18181D8A244016A10006E095 /* Assets.xcassets */,
 				18181D8C244016A10006E095 /* LaunchScreen.storyboard */,
@@ -167,15 +193,8 @@
 		18181DB2244016E00006E095 /* GMLLayout */ = {
 			isa = PBXGroup;
 			children = (
-				18181DB3244017A50006E095 /* GMLViewLayoutAttributes.swift */,
-				1814AE31244591A4003FDE51 /* GMLLayerAttribute.swift */,
-				1814AE3324459278003FDE51 /* GMLLayerConstraint.swift */,
-				1814AE3524459FDE003FDE51 /* GMLCompositeConstraint.swift */,
-				1814AE0C24441002003FDE51 /* GMLLayoutAttributesDefines.swift */,
-				1814AE0A2444014B003FDE51 /* GMLLayoutProtocol.swift */,
-				1814AE0E24441441003FDE51 /* GMLLayoutMarker.swift */,
-				1814AE2D24458BFA003FDE51 /* GMLConstraint.swift */,
-				1814AE572449842F003FDE51 /* GMLConstraintContainer.swift */,
+				180CD498244D8682001F574B /* Calculate */,
+				180CD496244D8667001F574B /* Config */,
 			);
 			name = GMLLayout;
 			path = ../GMLLayout;
@@ -445,16 +464,17 @@
 			files = (
 				1814AE2E24458BFA003FDE51 /* GMLConstraint.swift in Sources */,
 				1814AE0F24441441003FDE51 /* GMLLayoutMarker.swift in Sources */,
-				1814AE0B2444014B003FDE51 /* GMLLayoutProtocol.swift in Sources */,
-				18181DB4244017A50006E095 /* GMLViewLayoutAttributes.swift in Sources */,
+				1814AE0B2444014B003FDE51 /* GMLLayout.swift in Sources */,
 				18181D86244016950006E095 /* ViewController.swift in Sources */,
 				18181D82244016950006E095 /* AppDelegate.swift in Sources */,
-				1814AE3424459278003FDE51 /* GMLLayerConstraint.swift in Sources */,
+				1814AE3424459278003FDE51 /* GMLViewConstraint.swift in Sources */,
+				180CD495244D77BB001F574B /* GMLConstraint+Public.swift in Sources */,
+				180CD493244D743F001F574B /* ViewExtension.swift in Sources */,
 				1814AE0D24441002003FDE51 /* GMLLayoutAttributesDefines.swift in Sources */,
 				18181D84244016950006E095 /* SceneDelegate.swift in Sources */,
-				1814AE32244591A4003FDE51 /* GMLLayerAttribute.swift in Sources */,
+				1814AE32244591A4003FDE51 /* GMLViewAttribute.swift in Sources */,
+				180CD49A244D86AE001F574B /* GMLSetLayout.swift in Sources */,
 				1814AE3624459FDE003FDE51 /* GMLCompositeConstraint.swift in Sources */,
-				1814AE582449842F003FDE51 /* GMLConstraintContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

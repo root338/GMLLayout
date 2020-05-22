@@ -1,5 +1,5 @@
 //
-//  GMLLayerConstraint.swift
+//  GMLViewConstraint.swift
 //  GMLLayoutDemo
 //
 //  Created by apple on 2020/4/14.
@@ -7,11 +7,13 @@
 //
 
 import UIKit
-
-class GMLLayerConstraint : NSObject, GMLConstraint {
+/// 视窗与视窗之间的约束布局
+class GMLViewConstraint : NSObject, GMLConstraintPrivate {
     
-    let fromItem : GMLLayerAttribute
-    private(set) var toItem : GMLLayerAttribute?
+    /// 视窗1
+    let fromItem : GMLViewAttribute
+    /// 视窗2
+    private(set) var toItem : GMLViewAttribute?
     unowned var delegate : GMLConstraintDelegate
     
     var relation = GMLLayoutRelation.equal
@@ -19,14 +21,14 @@ class GMLLayerConstraint : NSObject, GMLConstraint {
     var constant = CGFloat(0)
     var active = true
     
-    init(delegate: GMLConstraintDelegate, fromItem: GMLLayerAttribute) {
+    init(delegate: GMLConstraintDelegate, fromItem: GMLViewAttribute) {
         self.delegate = delegate
         self.fromItem = fromItem
         super.init()
     }
 }
 
-extension GMLLayerConstraint {
+extension GMLViewConstraint {
 
     //MARK:- GMLConstraint
     func insets(_ insets: UIEdgeInsets) -> GMLConstraint {
@@ -62,4 +64,8 @@ extension GMLLayerConstraint {
         return self
     }
     
+    func equal(_ viewAttribute: GMLViewAttribute) -> GMLConstraint {
+        toItem = viewAttribute
+        return self
+    }
 }
